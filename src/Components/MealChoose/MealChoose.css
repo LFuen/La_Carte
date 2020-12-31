@@ -1,0 +1,42 @@
+
+.choices {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Special Elite", cursive;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.option a{
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h2{
+    text-decoration: underline !important;
+    color:rgb(233, 111, 111);
+    text-shadow: 2px 2px rgb(82, 82, 82);
+}
+
+.option h3{
+    display: block;
+    font-size: 25px;
+    margin-block-start: 20px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.option a:hover{
+    width: auto;
+}

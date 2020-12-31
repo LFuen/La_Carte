@@ -1,0 +1,115 @@
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Special Elite', cursive;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  color:rgb(0, 0, 0);
+  font-size: 40px;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: rgb(233, 111, 111);
+    text-shadow: 2px 2px rgb(87, 87, 87);
+    background-size: 100%;
+    border-radius: 50px;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* 
+========================================
+  SCROLLBAR
+======================================== 
+*/
+
+:root {
+  --shadow: rgb(233, 111, 111);
+  --scrollbarBG: rgb(0, 0, 0);
+  --thumbBG: #dddddd;
+  border-radius: 10px;
+}
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  box-shadow: 0 -100vh 0 100vh var(--shadow), 0 0 15px 5px black;
+  border-radius: 10px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+.side-scroll {
+  display: flex;
+  overflow: auto;
+  padding-bottom: 5px;
+}
+.side-scroll > div {
+  flex: 1;
+  margin-right: 20px;
+  flex: 0 0 100px;
+  height: 100px;
+  background: #ccc;
+}
+.side-scroll::-webkit-scrollbar-thumb:horizontal {
+  background-color: var(--thumbBG);
+  box-shadow: -100vh 0 0 100vh var(--shadow), 0 0 15px 5px black;
+}
+
+/* 
+========================================
+            SCROLLBAR
+======================================== 
+*/
+
+/* 
+========================================
+            MEDIA QUERY
+======================================== 
+*/
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-header {
+    background-color: #282c3400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-link {
+    color: #61dafb;
+  }
+
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+/* 
+========================================
+            MEDIA QUERY
+======================================== 
+*/
